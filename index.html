@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onkar Purjalkar | ML Engineer Portfolio</title>
+  <meta name="description" content="Onkar Purjalkar - Machine Learning and AI developer. Projects include AIVICS, MindCare.ai Mental Health Score Predictor, and Vayu-Mitra Air Quality Prediction System." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Devicons for programming language icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">OP</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"       class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about"      class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills"     class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+        <li><a href="#projects"   class="nav-link" id="nav-projects">Projects</a></li>
+        
+<li>
+  <a href="#education" class="nav-link" id="nav-education">
+    Education
+  </a>
+</li>
+
+        <li><a href="#contact"    class="nav-link" id="nav-contact">Contact</a></li>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to Internships &amp; opportunity
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Onkar</span><br />
+        <span class="typewriter-wrapper">
+          <span id="typewriter"></span><span class="cursor">|</span>
+        </span>
+      </h1>
+      <p class="hero-subtitle">
+        B.Tech IT Student building intelligent systems with Machine Learning,
+        Data science &amp;  AI. Turning ideas into impactful technology.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="hero-view-projects">View My Work</a>
+        <a href="#contact"  class="btn btn-outline"  id="hero-contact">Let's Connect</a>
+        <a href="Onkar_Purjalkar_Resume.pdf" download class="btn btn-outline" id="hero-resume">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Resume
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Major Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Tech Skills</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">2mo</span>
+          <span class="stat-label">Experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+     
+
+        
+
+        <!-- Glowing center avatar -->
+        
+<!-- Animated center profile photo -->
+<div class="avatar-core">
+  <div class="core-ripple rip-1"></div>
+  <div class="core-ripple rip-2"></div>
+
+  <div class="avatar-photo-frame">
+    <img
+      src="assets/passport photo.jpeg"
+      alt="Onkar Purjalkar"
+      class="avatar-photo"
+    />
+  </div>
+</div>
+
+       
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-icon">🎓</div>
+          <h3>Education</h3>
+          <p>B.Tech IT Student with a deep passion for Machine Learning, Data Science , and building AI-driven systems that solve real-world problems.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon">💡</div>
+          <h3>What I Build</h3>
+          <p>From machine learning predictive models to full AI virtual assistants with voice, vision and automation — I engineer end-to-end intelligent systems.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon">🚀</div>
+          <h3>My Goal</h3>
+          <p>To build AI systems that feel magical. Currently seeking opportunities to grow as an ML Engineer and contribute to cutting-edge AI products.</p>
+        </div>
+      </div>
+      <div class="about-story glass-card">
+        <div class="story-text">
+          <h3>My Journey</h3>
+          <p>
+            Hi, I'm <strong>Onkar Purjalkar</strong> — a <strong>B.Tech IT &amp; AI&amp;DS student</strong> who is deeply
+            passionate about <strong>Python, Machine Learning, and Software Development</strong>. From day one,
+            I've loved turning data into intelligence and ideas into working applications.
+          </p>
+          <p>
+            I have internship experience at <strong>Jobito</strong> as a Software Tester, and hands-on
+            knowledge of <strong>Flask, SQL, NumPy, Pandas, PHP,</strong> and <strong>MySQL</strong>. I enjoy
+            building intelligent applications, analyzing real-world data, and solving problems through technology.
+          </p>
+          <p>
+            My goal is to grow as both a <strong>Software Developer</strong> and a <strong>Machine Learning
+            Engineer</strong> — creating innovative, impactful solutions that make a real difference.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">AI &amp; DS</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Flask</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL / SQL</span>
+            <span class="tag">Voice AI</span>
+            <span class="tag">Data Science</span>
+            <span class="tag">Python Dev</span>
+          </div>
+        </div>
+        <div class="story-visual">
+          <div class="code-block">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-filename">onkar.py</span>
+            </div>
+            <pre class="code-content"><code><span class="code-keyword">class</span> <span class="code-class">OnkarPurjalkar</span>:
+  <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+    self.name   = <span class="code-str">"Onkar Purjalkar"</span>
+    self.role   = <span class="code-str">"ML Engineer"</span>
+    self.degree = <span class="code-str">"B.Tech"</span>
+    self.skills = [<span class="code-str">"Python"</span>, <span class="code-str">"ML"</span>,
+                   <span class="code-str">"pandas"</span>, <span class="code-str">"Scikit learn"</span>]
+    self.exp    = <span class="code-str">"SQA @ Jobito"</span>
+
+  <span class="code-keyword">def</span> <span class="code-func">build</span>(self, idea):
+    model = RandomForest().<span class="code-func">fit</span>(data)
+    aivics = AIVICS().<span class="code-func">activate</span>()
+    <span class="code-keyword">return</span> <span class="code-str">"🚀 Shipped!"</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card glass-card" id="skill-python">
+          <div class="skill-icon-wrapper" style="--clr: #3776AB">
+            <svg viewBox="0 0 48 48" class="skill-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4C13 4 13.5 9 13.5 9L13.5 14H24.2V15.5H9S4 14.9 4 26C4 37.1 8.3 36.7 8.3 36.7H11V31.4S10.8 27 15.3 27H26.7S31 27.1 31 22.8V10.2S31.7 4 24 4Z" fill="#3776AB"/>
+              <path d="M24 44C35 44 34.5 39 34.5 39L34.5 34H23.8V32.5H39S44 33.1 44 22C44 10.9 39.7 11.3 39.7 11.3H37V16.6S37.2 21 32.7 21H21.3S17 20.9 17 25.2V37.8S16.3 44 24 44Z" fill="#FFD43B"/>
+              <circle cx="17.5" cy="11.5" r="2" fill="white"/>
+              <circle cx="30.5" cy="36.5" r="2" fill="white"/>
+            </svg>
+          </div>
+          
+          <h3 class="skill-name">Python</h3>
+          <div class="skill-bar-wrapper"><div class="skill-bar" style="--pct:92%;--clr:#3776AB"></div></div>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-ml">
+          <div class="skill-icon-wrapper" style="--clr:#FF6B35"><span class="skill-emoji">🧠</span></div>
+          <h3 class="skill-name">Machine Learning</h3>
+          <div class="skill-bar-wrapper"><div class="skill-bar" style="--pct:84%;--clr:#FF6B35"></div></div>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-sklearn">
+          <div class="skill-icon-wrapper" style="--clr:#F89939"><i class="devicon-scikitlearn-plain colored "></i></div>
+          <h3 class="skill-name">Scikit-Learn</h3>
+          <div class="skill-bar-wrapper"><div class="skill-bar" style="--pct:82%;--clr:#F89939"></div></div>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-numpy">
+          <div class="skill-icon-wrapper" style="--clr:#4DABF7"><i class="devicon-numpy-plain colored "></i></div>
+          <h3 class="skill-name">NumPy</h3>
+          <div class="skill-bar-wrapper"><div class="skill-bar" style="--pct:88%;--clr:#4DABF7"></div></div>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-pandas">
+          <div class="skill-icon-wrapper" style="--clr:#7B61FF"><i class="devicon-pandas-plain colored "></i></div>
+          <h3 class="skill-name">Pandas</h3>
+          <div class="skill-bar-wrapper"><div class="skill-bar" style="--pct:87%;--clr:#7B61FF"></div></div>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-matplotlib">
+          <div class="skill-icon-wrapper" style="--clr:#11557C"><i class="devicon-matplotlib-plain colored "></i></div>
+          <h3 class="skill-name">Matplotlib</h3>
+          <div class="skill-bar-wrapper"><div class="skill-bar" style="--pct:80%;--clr:#11A9DC"></div></div>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-streamlit">
+          <div class="skill-icon-wrapper" style="--clr:#FF4B4B"><i class="devicon-streamlit-plain colored "></i></div>
+          <h3 class="skill-name">Streamlit</h3>
+          <div class="skill-bar-wrapper"><div class="skill-bar" style="--pct:86%;--clr:#FF4B4B"></div></div>
+          <span class="skill-level">Advanced</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-mysql">
+          <div class="skill-icon-wrapper" style="--clr:#4479A1"><i class="devicon-mysql-original colored "></i></div>
+          <h3 class="skill-name">MySQL</h3>
+          <div class="skill-bar-wrapper"><div class="skill-bar" style="--pct:75%;--clr:#4479A1"></div></div>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-html">
+          <div class="skill-icon-wrapper" style="--clr:#E34F26"><i class="devicon-html5-plain colored orb-icon"></i></div>
+          <h3 class="skill-name">HTML &amp; CSS</h3>
+          <div class="skill-bar-wrapper"><div class="skill-bar" style="--pct:80%;--clr:#E34F26"></div></div>
+          <span class="skill-level">Proficient</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-js">
+          <div class="skill-icon-wrapper" style="--clr:#F7DF1E"><i class="devicon-javascript-plain colored orb-icon"></i></div>
+          <h3 class="skill-name">JavaScript</h3>
+          <div class="skill-bar-wrapper"><div class="skill-bar" style="--pct:74%;--clr:#F7DF1E"></div></div>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Work History</span>
+        <h2 class="section-title">My <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item glass-card" id="exp-jobito">
+          <div class="timeline-left">
+            <div class="timeline-logo">
+              <span class="tl-icon">🧪</span>
+            </div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-right">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Software Tester</h3>
+                <p class="exp-company">Jobito</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-badge">Internship</span>
+                <span class="exp-duration">⏱️ 2 Months</span>
+              </div>
+            </div>
+            <p class="exp-desc">
+              Worked as a Software Quality Assurance Tester at Jobito, performing manual and functional testing on
+              web-based applications. Responsible for writing and executing test cases, identifying bugs, tracking
+              defects, and collaborating with the development team to ensure high software quality and smooth user experience.
+            </p>
+            <div class="exp-skills">
+              <span class="exp-skill-tag">Manual Testing</span>
+              <span class="exp-skill-tag">Test Cases</span>
+              <span class="exp-skill-tag">Bug Tracking</span>
+              <span class="exp-skill-tag">QA Process</span>
+              <span class="exp-skill-tag">Defect Reporting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I've Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+<!-- ── Project 2: MindCare.ai ── -->
+        <div class="project-card glass-card ml-project-card" id="project-mindcare">
+          <a class="project-preview-link" href="https://mindscore-ai-4dzi.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Open MindCare.ai live demo"><img class="project-preview" src="assets/mindcare-preview.png" alt="MindCare.ai mental well-being assessment interface preview" loading="lazy"></a>
+          <div class="project-glow" style="--glow:#A78BFA"></div>
+          <div class="project-header">
+            <div class="project-icon" style="background:linear-gradient(135deg,#7B61FF,#E040FB)">🧠</div>
+            <div class="project-badges">
+              <span class="project-badge">Machine Learning</span>
+              <span class="project-badge">Health Awareness</span>
+              <span class="project-badge">Python</span>
+            </div>
+          </div>
+          <h3 class="project-title">MindCare.ai – Mental Health Score Predictor</h3>
+          <p class="project-desc">
+            A machine learning application that estimates a mental health score on a
+            <strong>0–10 scale</strong> from lifestyle and daily-habit factors such as sleep,
+            stress, study habits, and screen time. It presents supportive precautions and
+            suggestions based on the model's prediction. It is an awareness tool, not a clinical diagnosis.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">API Integration</span>
+          </div>
+          <div class="project-features">
+            <div class="feature">✅ Mental health score prediction (0–10)</div>
+            <div class="feature">✅ Lifestyle and habit-based inputs</div>
+            <div class="feature">✅ Personalized precautions and suggestions</div>
+            <div class="feature">✅ Simple, user-friendly interface</div>
+          </div>
+          <div class="project-links">
+      
+            <a class="btn btn-outline" href="https://github.com/Onkar-p/mental_health_score-" target="_blank" rel="noopener noreferrer" aria-label="View MindCare.ai source code on GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+<!-- ── Project 3: Vayu-Mitra ── -->
+        <div class="project-card glass-card ml-project-card" id="project-vayu-mitra">
+          <div class="project-preview-link"><img class="project-preview" src="assets/vayu-mitra-preview.png" alt="Vayu Mitra air quality prediction dashboard preview" loading="lazy"></div>
+          <div class="project-glow" style="--glow:#00D4AA"></div>
+          <div class="project-header">
+            <div class="project-icon" style="background:linear-gradient(135deg,#00D4AA,#00A3E0)">🌿</div>
+            <div class="project-badges">
+              <span class="project-badge">Machine Learning</span>
+              <span class="project-badge">Environment</span>
+              <span class="project-badge">Python</span>
+            </div>
+          </div>
+          <h3 class="project-title">Vayu-Mitra – Air Quality Prediction System</h3>
+          <p class="project-desc">
+            An air-quality monitoring and prediction project designed to help users understand
+            pollution levels and potential risks. It uses <strong>Random Forest and Linear Regression</strong>
+            with environmental data to estimate air-quality trends and present clear, actionable advisories.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Random Forest</span>
+            <span class="tech-tag">Linear Regression</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Flask</span>
+          </div>
+          <div class="project-features">
+            <div class="feature">✅ Air Quality Index prediction</div>
+            <div class="feature">✅ Environmental data preprocessing</div>
+            <div class="feature">✅ Pollution insights and advisories</div>
+            <div class="feature">✅ Web-based prediction interface</div>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-outline" href="https://github.com/Onkar-p/air-quality-predictor" target="_blank" rel="noopener noreferrer" aria-label="View Vayu-Mitra source code on GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+<!-- ── Project 3: AIVICS ── -->
+        <div class="project-card glass-card wide-card" id="project-aivics">
+          <div class="project-glow" style="--glow: #7B61FF"></div>
+          <div class="aivics-inner">
+            <div class="aivics-left">
+              <div class="project-header">
+                <div class="project-icon" style="background: linear-gradient(135deg,#7B61FF,#E040FB)">🤖</div>
+                <div class="project-badges">
+                  <span class="project-badge">AI</span>
+                  <span class="project-badge">Computer Vision</span>
+                  <span class="project-badge">Voice</span>
+                  <span class="project-badge">Automation</span>
+                </div>
+              </div>
+              <h3 class="project-title">AIVICS</h3>
+              <p class="project-subtitle">AI-Enhanced Virtual Interaction &amp; Control System</p>
+              <p class="project-desc">
+                An Alexa-like AI-powered virtual assistant designed to perform intelligent tasks through
+                <strong>voice commands</strong>, <strong>computer vision</strong>, and <strong>full system automation</strong>.
+                Integrates multiple Python libraries and APIs to deliver real-time, hands-free smart control.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">MediaPipe</span>
+                <span class="tech-tag">SpeechRecognition</span>
+                <span class="tech-tag">pyttsx3</span>
+                <span class="tech-tag">Bootstrap API</span>
+                <span class="tech-tag">Python</span>
+              </div>
+            </div>
+            <div class="aivics-right">
+              <h4 class="features-heading">⚡ Key Features</h4>
+              <div class="features-list">
+                <div class="feature-pill">🎤 Hotword Detection</div>
+                <div class="feature-pill">✋ Air Canvas (Hand Tracking)</div>
+                <div class="feature-pill">📷 Camera Control</div>
+                <div class="feature-pill">🌐 Open Websites &amp; Apps</div>
+                <div class="feature-pill">🎨 AI Image Generation</div>
+                <div class="feature-pill">🔋 Battery Monitoring</div>
+                <div class="feature-pill">👁️ Eye Mouse Control</div>
+                <div class="feature-pill">🔊 Volume Control</div>
+                <div class="feature-pill">📶 Internet Speed Check</div>
+                <div class="feature-pill">📧 Email / SMS / WhatsApp</div>
+                <div class="feature-pill">📞 Phone Call Trigger</div>
+                <div class="feature-pill">💬 Chatbot Responses</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+<!-- EDUCATION SECTION -->
+<section id="education" class="education section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">My Academic Journey</span>
+      <h2 class="section-title">
+        My <span class="gradient-text">Education</span>
+      </h2>
+    </div>
+
+    <div class="education-grid">
+
+      <!-- B.Tech Education -->
+      <article class="education-card glass-card">
+        <div class="education-top">
+          <div class="education-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <span class="education-date">2025 – 2028</span>
+        </div>
+
+        <h3>Bachelor of Technology</h3>
+        <h4>Information Technology</h4>
+
+        <p class="education-college">
+          <i class="fa-solid fa-building-columns"></i>
+          MGM College of Engineering, Nanded
+        </p>
+
+        <p class="education-description">
+          Pursuing a Bachelor of Technology in Information Technology,
+          building a strong foundation in programming, data structures,
+          algorithms, web technologies, and software engineering.
+          Hands-on projects have strengthened my practical understanding
+          of machine learning, deep learning, and web development.
+        </p>
+
+        <div class="education-footer">
+          <span class="education-grade">
+            <i class="fa-solid fa-chart-line"></i>
+            7.1 CGPA
+          </span>
+          <span class="education-status">Up to 4th Semester</span>
+        </div>
+      </article>
+
+      <!-- Diploma Education -->
+      <article class="education-card glass-card">
+        <div class="education-top">
+          <div class="education-icon diploma-icon">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <span class="education-date">June 2022 – June 2026</span>
+        </div>
+
+        <h3>Diploma</h3>
+        <h4>Information Technology</h4>
+
+        <p class="education-college">
+          <i class="fa-solid fa-building-columns"></i>
+          Government Polytechnic, Nanded
+        </p>
+
+        <p class="education-description">
+          Gained technical knowledge in programming, networking,
+          database management, and computer systems. Developed
+          problem-solving skills and established a strong foundation
+          in software development and web technologies.
+        </p>
+
+        <div class="education-footer">
+          <span class="education-grade">
+            <i class="fa-solid fa-award"></i>
+            85.25%
+          </span>
+          <span class="education-status completed">Completed</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-intro">
+            I'm open to <strong>internships</strong>, <strong>opportunity</strong> and exciting
+            <strong>ML/AI projects</strong>. Whether you have an opportunity or just want to say hi — 
+            my inbox is always open!
+          </p>
+          <div class="contact-items">
+            <a href="mailto:onkarpurjalkar90.40@gmail.com" class="contact-item" id="contact-email">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">onkarpurjalkar90.40@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/onkar-p" target="_blank" rel="noopener" class="contact-item" id="contact-github">
+              <div class="contact-item-icon"><i class="devicon-github-plain colored orb-icon"></i></div>
+              <div>
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-value">github.com/onkar-p</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/onkar-purjalkar-b63b74391" target="_blank" rel="noopener" class="contact-item" id="contact-linkedin">
+              <div class="contact-item-icon"><i class="devicon-linkedin-plain colored orb-icon"></i></div>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">linkedin.com/in/onkar-purjalkar-b63b74391</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span>Send Message</span>
+            <span class="btn-icon">🚀</span>
+          </button>
+          <div id="form-success" class="form-success" style="display:none">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">OP</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">Designed &amp; Built with ❤️ by <strong>Onkar Purjalkar</strong></p>
+        <p class="footer-copy">© 2026 Onkar Purjalkar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
