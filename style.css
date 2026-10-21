@@ -3,6 +3,7 @@
    ============================================= */
 
 /* ---------- CSS Variables (Design Tokens) ---------- */
+<<<<<<< HEAD
 
 
 /* Rotating neon frame around the profile photo */
@@ -76,6 +77,8 @@
   }
 }
 
+=======
+>>>>>>> a619405ce692f6dfd8c64c83ad67dad65170a957
 :root {
   --bg-primary: #030712;
   --bg-secondary: #0a0f1e;
@@ -1308,6 +1311,7 @@ body {
   .hero-stats { flex-direction: column; }
   .stat-divider { width: 40px; height: 1px; }
 }
+<<<<<<< HEAD
 
 
 /* ---------- Project action links ---------- */
@@ -1350,3 +1354,5 @@ body {
 .ml-project-card .project-tech,
 .ml-project-card .project-features,
 .ml-project-card .project-links { position: relative; z-index: 1; }
+=======
+>>>>>>> a619405ce692f6dfd8c64c83ad67dad65170a957
