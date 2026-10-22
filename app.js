@@ -334,3 +334,79 @@ console.log(`
   ╚════════════════════════════════════╝
   Built with ❤️ | © 2024
 `);
+
+
+/* Certification cards reveal animation */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".certificate-card");
+
+  if (!("IntersectionObserver" in window)) {
+    cards.forEach(card => card.classList.add("certificate-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("certificate-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  cards.forEach(card => {
+    card.classList.add("certificate-hidden");
+    observer.observe(card);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("certificateModal");
+  const image = document.getElementById("certificateImage");
+  const title = document.getElementById("certificateTitle");
+  const closeButton = document.getElementById("closeCertificate");
+  const fullImageLink = document.getElementById("openFullCertificate");
+
+  if (!modal || !image || !title || !closeButton || !fullImageLink) {
+    return;
+  }
+
+  document.querySelectorAll("[data-certificate]").forEach(button => {
+    button.addEventListener("click", () => {
+      const path = button.dataset.certificate;
+
+      image.src = path;
+      image.alt = button.dataset.title || "Certificate preview";
+      title.textContent = button.dataset.title || "Certificate";
+      fullImageLink.href = path;
+
+      modal.classList.add("active");
+      modal.setAttribute("aria-hidden", "false");
+      closeButton.focus();
+    });
+  });
+
+  function closeModal() {
+    modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
+    image.src = "";
+  }
+
+  closeButton.addEventListener("click", closeModal);
+
+  modal.addEventListener("click", event => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && modal.classList.contains("active")) {
+      closeModal();
+    }
+  });
+});
